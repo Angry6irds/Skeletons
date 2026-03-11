@@ -313,6 +313,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1089993751745821292, guid: 9b686b8f2c009af48873dbc3f4b10453, type: 3}
+      propertyPath: windowID
+      value: PopUpUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1794089148577166224, guid: 9b686b8f2c009af48873dbc3f4b10453, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3246668534008547255, guid: 9b686b8f2c009af48873dbc3f4b10453, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -1,6 +1,19 @@
 using UnityEngine;
 
-public class PopupUI : UIWindow
+namespace Alejandro
 {
-   
+    public class PopupUI : UIWindow
+    {
+        public override void Show()
+        {
+            base.Show();
+        }
+
+        public override void Hide()
+        {
+            base.Hide();
+        }
+    }
 }
+
+

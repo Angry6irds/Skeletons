@@ -1,20 +1,31 @@
 using UnityEngine;
 
-public class UIWindow : MonoBehaviour
+namespace Alejandro
 {
-    void Awake()
+    public class UIWindow : MonoBehaviour
     {
+        [Header("UI Window")]
+        [SerializeField] private string windowID;
+    
+        void Awake()
+        {
         
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+        }
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
         
-    }
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        public virtual void Show()
+        {
         
+        }
+
+        public virtual void Hide()
+        {
+        
+        }
     }
 }
+
