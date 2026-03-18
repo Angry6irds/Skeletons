@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ab8dd79211392423e8c0965813ca06cb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 301780
+  packageName: Tower - Top Down Pixel Art Building Assets
+  packageVersion: 1.0
+  assetPath: Assets/sanctum_pixel/tower_1_package/Sprite/tower_1_arrow/arrow_1_1.controller
+  uploadId: 706500

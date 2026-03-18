@@ -1,31 +1,61 @@
+using DG.Tweening;
+using NaughtyAttributes;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 
-namespace Alejandro
+
+public class UIWindow : MonoBehaviour
 {
-    public class UIWindow : MonoBehaviour
-    {
-        [Header("UI Window")]
-        [SerializeField] private string windowID;
+    [Header("UI Window")] [SerializeField] private string windowId;
+
+    [Header("UI References")] [SerializeField]
+    private Canvas canvas;
+
+    [SerializeField] private CanvasGroup canvasGroup;
+
+    [SerializeField] private bool hideOnStart = true;
+
+    public string WindowId => windowId;
     
-        void Awake()
-        {
-        
-        }
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-        
-        }
+    private RectTransform rectTransform => canvasGroup.GetComponent<RectTransform>();
 
-        public virtual void Show()
-        {
-        
-        }
+    private void Awake()
+    {
 
-        public virtual void Hide()
+    }
+
+    void Start()
+    {
+        Initialize();
+    }
+
+
+    public void Initialize()
+    {
+        canvas.gameObject.SetActive(!hideOnStart);
+        rectTransform.localScale = Vector3.zero;
+    }
+
+    [Button]
+    public virtual void Show()
+    {
+        canvas.gameObject.SetActive(true);
+
+        Debug.Log($"Showing window {windowId}");
+        rectTransform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).OnComplete(() =>
         {
-        
-        }
+            
+        });
+    }
+
+    [Button]
+    public virtual void Hide()
+    {
+        Debug.Log($"Hideing window {windowId}");
+        rectTransform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.OutBack).OnComplete(() =>
+        {
+            canvas.gameObject.SetActive(false);
+        });
     }
 }
 

@@ -1,6 +1,6 @@
 namespace Alejandro
 {
-    public class SettingsUI
+    public class SettingsUI : UIWindow
     {
         
     }

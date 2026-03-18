@@ -776,6 +776,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2edbc59ad8f6aba44a3ff3209836aa4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PopupUI
+  windowId: PopUpUI
+  canvas: {fileID: 4694638291176762856}
+  canvasGroup: {fileID: 8517318374934155486}
+  hideOnStart: 1
 --- !u!1 &8204035440882398335
 GameObject:
   m_ObjectHideFlags: 0
