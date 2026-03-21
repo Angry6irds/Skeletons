@@ -9,15 +9,15 @@ public class UIWindow : MonoBehaviour
     [Header("UI Window")] [SerializeField] private string windowId;
 
     [Header("UI References")] [SerializeField]
-    private Canvas canvas;
+    public Canvas canvas;
 
-    [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] public CanvasGroup canvasGroup;
 
-    [SerializeField] private bool hideOnStart = true;
+    [SerializeField] public bool hideOnStart = true;
 
     public string WindowId => windowId;
     
-    private RectTransform rectTransform => canvasGroup.GetComponent<RectTransform>();
+    public RectTransform rectTransform => canvasGroup.GetComponent<RectTransform>();
 
     private void Awake()
     {
@@ -30,7 +30,7 @@ public class UIWindow : MonoBehaviour
     }
 
 
-    public void Initialize()
+    public virtual void Initialize()
     {
         canvas.gameObject.SetActive(!hideOnStart);
         rectTransform.localScale = Vector3.zero;
