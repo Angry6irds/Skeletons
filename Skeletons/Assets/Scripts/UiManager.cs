@@ -99,9 +99,20 @@ public class UiManager : MonoBehaviour
 
     void Update()
     {
+        
+    }
 
+    public UIWindow GetWindow(string windowId)
+    {
+        foreach (var ui in windows)
+        {
+         ui.WindowId
+        }
+
+        return null;
     }
 }
+
 
 public static class WindowsId
 {
@@ -109,4 +120,3 @@ public static class WindowsId
     public const string SettingsUI = "SettingsUI";
     
 }
-    

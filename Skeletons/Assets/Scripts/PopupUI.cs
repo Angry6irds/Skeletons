@@ -1,11 +1,29 @@
+using System;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Alejandro
 {
     public class PopupUI : UIWindow
     {
+        [SerializeField] private TextMeshPro titleText;
         [SerializeField] private RectTransform popupRectTransform;
+        [SerializeField] private Button noButton;
+        [SerializeField] private Button yesButton;
+        
+        public override void Initialize()
+        {
+            popupRectTransform.DOScale(Vector3.zero, 0f);
+            Debug.Log(popupRectTransform + $"si sirve");
+            //popupRectTransform.gameObject.SetActive(hideOnStart);
+            //popupRectTransform.localScale = Vector3.zero;
+            popupRectTransform.DOMoveY(1500, 0f);
+            noButton.onClick.AddListener(OnNoButtonClicked);
+            yesButton.onClick.AddListener(OnYesButtonClicked);
+        }
+        
         public override void Show()
         {
             //popupRectTransform.gameObject.SetActive(true);
@@ -31,14 +49,25 @@ namespace Alejandro
             );
         }
 
-        public override void Initialize()
+        private void OnYesButtonClicked()
         {
-            popupRectTransform.DOScale(Vector3.zero, 0f);
+            Debug.Log("Yes button clicked!");
+        }
 
-            Debug.Log(popupRectTransform + $"si sirve");
-            //popupRectTransform.gameObject.SetActive(hideOnStart);
-            //popupRectTransform.localScale = Vector3.zero;
-            popupRectTransform.DOMoveY(1500, 0f);
+        private void OnNoButtonClicked()
+        {
+            Debug.Log("No button clicked");
+        }
+
+        private void OnDestroy()
+        {
+            yesButton.onClick.RemoveListener(OnYesButtonClicked);
+            noButton.onClick.RemoveListener(OnNoButtonClicked);
+        }
+
+        public void SetText(string content)
+        {
+            titleText.text = content;
         }
     }
 }

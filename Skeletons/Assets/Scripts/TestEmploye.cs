@@ -13,6 +13,8 @@ namespace Alejandro
         public void ShowPopup()
         {
             UiManager.Instance.ShowWindow(WindowsId.PopUpUI);
+            PopupUI popupUI = UiManager.Instance.GetWindow(WindowsId.PopUpUI) as PopupUI;
+            popupUI.SetText("Como llegaste aqui?");
         }
         
         public void HidePopup()
