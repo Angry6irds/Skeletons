@@ -106,9 +106,12 @@ public class UiManager : MonoBehaviour
     {
         foreach (var ui in windows)
         {
-         ui.WindowId
+            if (ui.WindowId == windowId)
+            {
+                return ui;
+            }
         }
-
+        Debug.LogError("No window found with id =" + windowId);
         return null;
     }
 }
