@@ -1023,7 +1023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7182210000382059792}
-  - component: {fileID: 5742677933730642946}
+  - component: {fileID: 2451940424802951787}
   m_Layer: 0
   m_Name: GamplayUI
   m_TagString: Untagged
@@ -1047,7 +1047,7 @@ Transform:
   - {fileID: 5009303753634555559}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5742677933730642946
+--- !u!114 &2451940424802951787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1056,9 +1056,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4901755224014748026}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af375441a56c410ab5fa782b8a149148, type: 3}
+  m_Script: {fileID: 11500000, guid: b9c5dc3a0d8d4a4c8f7181c43ff42057, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.SettingsUI
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.GameplayUI
   windowId: 
   canvas: {fileID: 5979563086946190630}
   canvasGroup: {fileID: 5569462081915476873}

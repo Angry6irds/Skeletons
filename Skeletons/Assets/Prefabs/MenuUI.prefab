@@ -1050,6 +1050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4204657428009393552}
+  - component: {fileID: 6678136210012116535}
   m_Layer: 0
   m_Name: MenuUI
   m_TagString: Untagged
@@ -1073,3 +1074,19 @@ Transform:
   - {fileID: 8740654789625561116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6678136210012116535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8741902776221738328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6ccb11a03c1834badece78dfb3351d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuUI
+  windowId: 
+  canvas: {fileID: 308057875383086093}
+  canvasGroup: {fileID: 8706143291190053561}
+  hideOnStart: 1

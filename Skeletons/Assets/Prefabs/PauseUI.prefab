@@ -438,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154034188225569561}
-  - component: {fileID: 1392630446714202089}
+  - component: {fileID: 3551418371056831686}
   m_Layer: 0
   m_Name: PauseUI
   m_TagString: Untagged
@@ -462,7 +462,7 @@ Transform:
   - {fileID: 8715893670833784709}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1392630446714202089
+--- !u!114 &3551418371056831686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -471,9 +471,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2540057043762929511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af375441a56c410ab5fa782b8a149148, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d407746834e492c8d75e077979f2f72, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.SettingsUI
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.PauseUI
   windowId: 
   canvas: {fileID: 8471125109836041989}
   canvasGroup: {fileID: 3677343453787911267}

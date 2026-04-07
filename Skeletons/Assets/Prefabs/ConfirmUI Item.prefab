@@ -1055,7 +1055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8227674694278774387}
-  - component: {fileID: 3599531152095462081}
+  - component: {fileID: 6016964751914287918}
   m_Layer: 0
   m_Name: ConfirmUI Item
   m_TagString: Untagged
@@ -1079,7 +1079,7 @@ Transform:
   - {fileID: 1864596663029507454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3599531152095462081
+--- !u!114 &6016964751914287918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1088,12 +1088,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6045695570987577218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af375441a56c410ab5fa782b8a149148, type: 3}
+  m_Script: {fileID: 11500000, guid: 41095e135e1f47fd84e9098cf29fa8e9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.SettingsUI
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ConfirmUI_Item
   windowId: 
-  canvas: {fileID: 0}
-  canvasGroup: {fileID: 0}
+  canvas: {fileID: 8972677312605375905}
+  canvasGroup: {fileID: 9124952158829382874}
   hideOnStart: 1
 --- !u!1 &6276624859873851053
 GameObject:
