@@ -121,6 +121,11 @@ public static class WindowsId
 {
     public const string PopUpUI = "PopUpUI";
     public const string SettingsUI = "SettingsUI";
-    public const string ShopUI = "Shop";
+    public const string ShopUI = "shop";
+    public const string MenuUI = "menu";
+    public const string GameplayUI = "game";
+    public const string ConfirmUICharacter = "character";
+    public const string ConfirmUI_Item = "item";
+    public const string PauseUI = "pause";
     
 }
