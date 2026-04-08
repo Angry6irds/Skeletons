@@ -14,6 +14,7 @@ public class ItemUI : MonoBehaviour
     [Button]
     public void SetsData()
     {
-        itemIcon.sprite + 
+        itemIcon.sprite = ItemData.Icon;
+        itemNameText.text = ItemData.name;
     }
 }
