@@ -72,13 +72,27 @@ public class ResponsiveManager : MonoBehaviour
     {
         return IsPortrait() ? ScreenOrientation.Portrait : ScreenOrientation.Landscape;
     }
-    private ScreenOrientation GetScreenOrientation()
-    {
-        
-    }
+    
     private DeviceType GetDeviceTypeByResolution(int width, int height)
     {
-        
+        float aspectRatio = (float)Math.Max(width, height) / Math.Min(width, height);
+        int minDimension = Math.Min(width, height);
+
+        if (minDimension >= 600 && aspectRatio < 2.0f)
+            return DeviceType.Tablet;
+        else
+            return DeviceType.Mobile;
     }
     #endregion
+    
+    public enum ScreenOrientation
+    {
+        Portrait,
+        Landscape
+    }
+    public enum DeviceType
+    {
+        Mobile,
+        Tablet,
+    }
 }
