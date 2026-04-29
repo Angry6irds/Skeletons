@@ -33,6 +33,7 @@ namespace Alejandro
         public void SetMusicVolume(float value)
         {
             _music = value;
+            Debug.Log(_music);
         }
         
     }
