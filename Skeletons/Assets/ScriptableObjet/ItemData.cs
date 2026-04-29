@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace ScriptableObjet
 {
@@ -6,9 +7,21 @@ namespace ScriptableObjet
     public class ItemData:ScriptableObject
     {
         [SerializeField] Sprite icon;
-        [SerializeField] string itenName;
+        [FormerlySerializedAs("itenName")] [SerializeField] string itemName;
+        [SerializeField] public ItemType itemType;
+        
         public Sprite Icon => icon;
-        public string ItenName => itenName;
+        
+        public string ItemName => itemName;
+    
+    }
 
+    public enum ItemType
+    {
+        skeleton,
+        iceSkeleton,
+        mudSkeleton,
+        sword,
+        axe,
     }
 }
