@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8598930907229716007}
   - component: {fileID: 6133986429446234475}
+  - component: {fileID: 8527046156735463755}
   m_Layer: 0
   m_Name: Slider Music
   m_TagString: Untagged
@@ -220,9 +221,9 @@ RectTransform:
   - {fileID: 7610185679298221753}
   m_Father: {fileID: 3928721429750031168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.02905983, y: 0.5}
-  m_AnchorMax: {x: 0.34957266, y: 0.6027778}
-  m_AnchoredPosition: {x: 0, y: -345}
+  m_AnchorMin: {x: 0.02905983, y: 0.18055555}
+  m_AnchorMax: {x: 0.34957266, y: 0.28333333}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6133986429446234475
@@ -276,6 +277,23 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8527046156735463755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882877818750533464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
+  _rectTransform: {fileID: 8598930907229716007}
+  mobileAnchorMin: {x: 0.02905983, y: 0.18055555}
+  mobileAnchorsMax: {x: 0.34957266, y: 0.28333333}
+  tabletAnchorsMin: {x: 0.02905983, y: 0.18055555}
+  tabletAnchorsMax: {x: 0.34957266, y: 0.28333333}
 --- !u!1 &1084516039766065257
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,10 +326,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3928721429750031168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2340, y: 1080}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7320659890131061424
 CanvasRenderer:
@@ -362,6 +380,7 @@ GameObject:
   - component: {fileID: 3342781606134347007}
   - component: {fileID: 1933541606837063995}
   - component: {fileID: 7508990004178101354}
+  - component: {fileID: 5649418903529227060}
   m_Layer: 0
   m_Name: TextContainer
   m_TagString: Untagged
@@ -384,10 +403,10 @@ RectTransform:
   - {fileID: 7463877014548585691}
   m_Father: {fileID: 3928721429750031168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -764, y: 391}
-  m_SizeDelta: {x: 750, y: 160}
+  m_AnchorMin: {x: 0.029059842, y: 0.787963}
+  m_AnchorMax: {x: 0.34957266, y: 0.9361111}
+  m_AnchoredPosition: {x: 0.00024414062, y: 0}
+  m_SizeDelta: {x: 0.0001335144, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1933541606837063995
 CanvasRenderer:
@@ -427,6 +446,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5649418903529227060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143007292556075914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
+  _rectTransform: {fileID: 3342781606134347007}
+  mobileAnchorMin: {x: 0.013247863, y: 0.787963}
+  mobileAnchorsMax: {x: 0.33376068, y: 0.9361111}
+  tabletAnchorsMin: {x: 0.029059842, y: 0.787963}
+  tabletAnchorsMax: {x: 0.34957266, y: 0.9361111}
 --- !u!1 &1452343837771693524
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,6 +685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 234888401138511642}
   - component: {fileID: 154318542305258856}
+  - component: {fileID: 283508993559248775}
   m_Layer: 0
   m_Name: SliderSFX
   m_TagString: Untagged
@@ -729,6 +766,23 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &283508993559248775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2384535926777182457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
+  _rectTransform: {fileID: 234888401138511642}
+  mobileAnchorMin: {x: 0.02905983, y: 0.5}
+  mobileAnchorsMax: {x: 0.34957266, y: 0.6027778}
+  tabletAnchorsMin: {x: 0.02905983, y: 0.5}
+  tabletAnchorsMax: {x: 0.34957266, y: 0.6027778}
 --- !u!1 &2786352828124434534
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +945,7 @@ GameObject:
   - component: {fileID: 5876497877097536438}
   - component: {fileID: 673847883563308609}
   - component: {fileID: 5322678184024043773}
+  - component: {fileID: 6469900827232173628}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -912,10 +967,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3928721429750031168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 629.0798, y: 2.4278}
-  m_SizeDelta: {x: 600.1766, y: 1084.9}
+  m_AnchorMin: {x: 0.541071, y: -0.000020571108}
+  m_AnchorMax: {x: 0.89708036, y: 1.0045165}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &673847883563308609
 CanvasRenderer:
@@ -955,6 +1010,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6469900827232173628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4216083093249211968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
+  _rectTransform: {fileID: 5876497877097536438}
+  mobileAnchorMin: {x: 0.64059466, y: -0.000020571108}
+  mobileAnchorsMax: {x: 0.89708036, y: 1.0045165}
+  tabletAnchorsMin: {x: 0.541071, y: -0.000020571108}
+  tabletAnchorsMax: {x: 0.89708036, y: 1.0045165}
 --- !u!1 &4742521393245137678
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +1039,7 @@ GameObject:
   - component: {fileID: 6333050418958670692}
   - component: {fileID: 2935236343421270732}
   - component: {fileID: 6252948209543163459}
+  - component: {fileID: 1915137337526180020}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -989,10 +1062,10 @@ RectTransform:
   - {fileID: 8054300477350050321}
   m_Father: {fileID: 3928721429750031168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1066, y: 442}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.934188, y: 0.8851852}
+  m_AnchorMax: {x: 0.9855027, y: 0.9777778}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.000049591064, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6333050418958670692
 CanvasRenderer:
@@ -1076,6 +1149,23 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1915137337526180020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742521393245137678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
+  _rectTransform: {fileID: 9043348051273753511}
+  mobileAnchorMin: {x: 0.934188, y: 0.86296296}
+  mobileAnchorsMax: {x: 0.97692305, y: 0.95555556}
+  tabletAnchorsMin: {x: 0.934188, y: 0.8851852}
+  tabletAnchorsMax: {x: 0.9855027, y: 0.9777778}
 --- !u!1 &6047198739752634282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 4.278412, y: 0}
+  m_AnchoredPosition: {x: 4.2784424, y: 0}
   m_SizeDelta: {x: 110, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5552812946470418822
