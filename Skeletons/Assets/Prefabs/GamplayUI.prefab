@@ -1565,6 +1565,7 @@ GameObject:
   - component: {fileID: 5813628427265132288}
   - component: {fileID: 1013802050697290533}
   - component: {fileID: 2419039133806042163}
+  - component: {fileID: 1877442339707940617}
   m_Layer: 0
   m_Name: Info Panel
   m_TagString: Untagged
@@ -1634,6 +1635,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1877442339707940617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6836453161758039538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
+  _rectTransform: {fileID: 5813628427265132288}
+  mobileAnchorMin: {x: 0, y: 0}
+  mobileAnchorsMax: {x: 0, y: 0}
+  tabletAnchorsMin: {x: 0, y: 0}
+  tabletAnchorsMax: {x: 0, y: 0}
 --- !u!1 &6849957715529471522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +1703,7 @@ GameObject:
   - component: {fileID: 4605706806704916178}
   - component: {fileID: 7786507159750883080}
   - component: {fileID: 4102789733934387228}
+  - component: {fileID: 2029937114974880500}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -1794,6 +1813,23 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2029937114974880500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6919981382512237293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
+  _rectTransform: {fileID: 510103112895493959}
+  mobileAnchorMin: {x: 0, y: 0}
+  mobileAnchorsMax: {x: 0, y: 0}
+  tabletAnchorsMin: {x: 0, y: 0}
+  tabletAnchorsMax: {x: 0, y: 0}
 --- !u!1 &7499455569814340041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,6 +1991,7 @@ GameObject:
   - component: {fileID: 2446020706978050999}
   - component: {fileID: 461464019618521004}
   - component: {fileID: 335895540772957343}
+  - component: {fileID: 2463506066050151719}
   m_Layer: 0
   m_Name: Info Panel (1)
   m_TagString: Untagged
@@ -2022,6 +2059,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2463506066050151719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551507971900675296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
+  _rectTransform: {fileID: 2446020706978050999}
+  mobileAnchorMin: {x: 0, y: 0}
+  mobileAnchorsMax: {x: 0, y: 0}
+  tabletAnchorsMin: {x: 0, y: 0}
+  tabletAnchorsMax: {x: 0, y: 0}
 --- !u!1 &8695637168878531190
 GameObject:
   m_ObjectHideFlags: 0
