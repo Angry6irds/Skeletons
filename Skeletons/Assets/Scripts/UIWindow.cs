@@ -24,10 +24,10 @@ public class UIWindow : MonoBehaviour
 
     }
 
-    void Start()
+    /*void Start()
     {
         Initialize();
-    }
+    }*/
 
 
     public virtual void Initialize()

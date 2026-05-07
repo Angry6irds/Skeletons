@@ -29,6 +29,12 @@ public class UiManager : MonoBehaviour
 
     private void Initialize()
     {
+        foreach (var window in windows)
+        {
+            window.Initialize(); 
+        }
+
+        ShowWindow(WindowsId.MenuUI);
     }
 
 
