@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e351d51d008460b8418b774cac3be1b, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjet.ItemData
-  icon: {fileID: 0}
-  itemName: 
+  icon: {fileID: 21300000, guid: a5e2353eae2cfa14eaae124761c8de5e, type: 3}
+  itemName: espada
   itemType: 3

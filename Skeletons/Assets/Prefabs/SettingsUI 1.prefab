@@ -1333,6 +1333,7 @@ MonoBehaviour:
   hideOnStart: 1
   sfxVolume: {fileID: 154318542305258856}
   musicVolume: {fileID: 6133986429446234475}
+  backButton: {fileID: 6252948209543163459}
 --- !u!1 &7842034983122326217
 GameObject:
   m_ObjectHideFlags: 0

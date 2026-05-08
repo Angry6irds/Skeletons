@@ -262,7 +262,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 44.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 141.15
+  m_fontSize: 75.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1499,6 +1499,10 @@ MonoBehaviour:
   canvas: {fileID: 7014843569373470789}
   canvasGroup: {fileID: 3879280476251413381}
   hideOnStart: 1
+  characterNameText: {fileID: 3373459267063884578}
+  characterIcon: {fileID: 1730019245465734280}
+  buyButton: {fileID: 510327946590134719}
+  cancelButton: {fileID: 1986798839020720047}
 --- !u!1 &7545286892563594727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,7 +1670,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 52.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

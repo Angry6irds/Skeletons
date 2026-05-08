@@ -24,7 +24,7 @@ public class ItemUI : MonoBehaviour
 
     private void Start()
     {
-        if (itemButton == null)
+        if (itemButton != null)
         {
             itemButton.onClick.AddListener(() => OnItemClicked?.Invoke(ItemData));
         }

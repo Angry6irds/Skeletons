@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e351d51d008460b8418b774cac3be1b, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjet.ItemData
-  icon: {fileID: 0}
-  itemName: 
+  icon: {fileID: 21300000, guid: 8b87b2b7faf49724b8c8385d9a6878f5, type: 3}
+  itemName: Hacha
   itemType: 4

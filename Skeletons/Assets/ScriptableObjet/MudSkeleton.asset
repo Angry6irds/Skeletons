@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e351d51d008460b8418b774cac3be1b, type: 3}
   m_Name: MudSkeleton
   m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjet.ItemData
-  icon: {fileID: 0}
-  itemName: 
+  icon: {fileID: 21300000, guid: 3db0cd7bfdd314e6cbacd242fbd28d7e, type: 3}
+  itemName: mud skeleton
   itemType: 2

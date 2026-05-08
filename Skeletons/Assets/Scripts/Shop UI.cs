@@ -12,6 +12,7 @@ namespace Alejandro
         [SerializeField]private Transform itemContentContainer;
         [SerializeField]private Transform characterContentContainer;
         [SerializeField]private Button confirmButton;
+        [SerializeField]private Button exitButton;
 
         [Header("Data to Load")] [SerializeField]
         private List<ItemData> allAvailableItems;
@@ -23,6 +24,7 @@ namespace Alejandro
             base.Initialize();
             confirmButton.gameObject.SetActive(false);
             confirmButton.onClick.AddListener(OnConfirmClicked);
+            if (exitButton != null) exitButton.onClick.AddListener(OnExitClicked);
             PopulateShop();
         }
 
@@ -82,9 +84,16 @@ namespace Alejandro
             }
         }
 
+        private void OnExitClicked()
+        {
+            UiManager.Instance.HideWindow(WindowsId.ShopUI);
+            UiManager.Instance.ShowWindow(WindowsId.MenuUI);
+        }
+
         private void OnDestroy()
         {
             if (confirmButton != null) confirmButton.onClick.RemoveListener(OnConfirmClicked);
+            if (exitButton != null) exitButton.onClick.RemoveListener(OnExitClicked);
         }
     }
 }
