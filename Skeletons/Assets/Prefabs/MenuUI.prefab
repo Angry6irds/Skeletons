@@ -1273,6 +1273,9 @@ MonoBehaviour:
   canvas: {fileID: 308057875383086093}
   canvasGroup: {fileID: 8706143291190053561}
   hideOnStart: 1
+  playButton: {fileID: 7233429024424550746}
+  shopButton: {fileID: 6209272716016241208}
+  settingsButton: {fileID: 5239411076192298369}
 --- !u!1 &9038618414692913422
 GameObject:
   m_ObjectHideFlags: 0
