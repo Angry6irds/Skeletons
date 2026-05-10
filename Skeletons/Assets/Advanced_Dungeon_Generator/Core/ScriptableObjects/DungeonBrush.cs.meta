@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6481ed9dded645d4d8fd84e2e19d3978
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Core/ScriptableObjects/DungeonBrush.cs
+  uploadId: 555956

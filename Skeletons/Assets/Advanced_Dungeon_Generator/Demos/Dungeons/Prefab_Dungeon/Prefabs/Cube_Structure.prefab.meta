@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 61209fc4145df6c41ac33e2afd57be47
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Prefab_Dungeon/Prefabs/Cube_Structure.prefab
+  uploadId: 555956

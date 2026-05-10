@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d65a273f3fa0e1c4db6163db73b82324
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Core/Presets/Brushes/Radial&Included_Single.preset
+  uploadId: 555956

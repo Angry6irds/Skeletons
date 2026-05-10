@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 41ac02652f6cf1346b48b0fde412319f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Test_Dungeon/Objects/Blueprints_&_Interactables/Blueprint_NavMesh_Test.prefab
+  uploadId: 555956

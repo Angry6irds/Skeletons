@@ -3,6 +3,7 @@ using UnityEngine;
 using ScriptableObjet;
 using UnityEditor;
 using UnityEngine.UI;
+using DG.Tweening;
 namespace Alejandro
 {
     public class Shop_UI : UIWindow
@@ -26,6 +27,22 @@ namespace Alejandro
             confirmButton.onClick.AddListener(OnConfirmClicked);
             if (exitButton != null) exitButton.onClick.AddListener(OnExitClicked);
             PopulateShop();
+        }
+
+        public override void Show()
+        {
+            canvas.gameObject.SetActive(true);
+            rectTransform.localScale = Vector3.one * 0.8f;
+            canvasGroup.alpha = 0f;
+            
+            canvasGroup.DOFade(1f, 0.4f);
+            rectTransform.DOScale(Vector3.one, 0.4f).SetEase(Ease.OutExpo);
+        }
+
+        public override void Hide()
+        {
+            canvasGroup.DOFade(0f, 0.3f);
+            rectTransform.DOScale(Vector3.one * 0.8f, 0.3f).SetEase(Ease.InExpo).OnComplete(() => canvas.gameObject.SetActive(false));
         }
 
         private void PopulateShop()
@@ -62,7 +79,6 @@ namespace Alejandro
         {
             _currentSelectedItem = selectedData;
             confirmButton.gameObject.SetActive(true);
-            Debug.Log($"Item selected:{selectedData.ItemName}");
         }
 
         private void OnConfirmClicked()

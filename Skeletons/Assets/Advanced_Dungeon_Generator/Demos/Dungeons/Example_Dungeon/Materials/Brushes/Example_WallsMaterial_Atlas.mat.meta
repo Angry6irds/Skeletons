@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b4b3f697d28ec16458783d68e528195a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Example_Dungeon/Materials/Brushes/Example_WallsMaterial_Atlas.mat
+  uploadId: 555956

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0c39404043570234d9a8c5b060d902f2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Prefab_Dungeon/Prefabs/Cube_Wall.prefab
+  uploadId: 555956

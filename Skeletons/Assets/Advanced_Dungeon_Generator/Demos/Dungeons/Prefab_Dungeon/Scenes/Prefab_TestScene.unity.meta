@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 54fdd5fa355121a489912ffbe8462f07
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Prefab_Dungeon/Scenes/Prefab_TestScene.unity
+  uploadId: 555956

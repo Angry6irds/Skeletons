@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c786cc2c82d24aa448e2ba0fe3564953
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Test_Dungeon/Dungeon_Components/Shapes/TileMap_Mask_Shape.asset
+  uploadId: 555956

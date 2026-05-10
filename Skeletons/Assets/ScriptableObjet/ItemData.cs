@@ -9,10 +9,13 @@ namespace ScriptableObjet
         [SerializeField] Sprite icon;
         [FormerlySerializedAs("itenName")] [SerializeField] string itemName;
         [SerializeField] public ItemType itemType;
+        [SerializeField, TextArea(3, 5)] string statsDescription;
         
         public Sprite Icon => icon;
         
         public string ItemName => itemName;
+
+        public string StatsDescription => statsDescription;
     
     }
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 namespace Alejandro
 {
@@ -24,8 +25,23 @@ namespace Alejandro
 
         public override void Show()
         {
-            base.Show();
+            canvas.gameObject.SetActive(true);
             UpdateSliders();
+            
+            rectTransform.localScale = Vector3.zero;
+            rectTransform.localRotation = Quaternion.Euler(0, 0, 15f);
+            canvasGroup.alpha = 0f;
+
+            canvasGroup.DOFade(1f, 0.4f);
+            rectTransform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+            rectTransform.DORotate(Vector3.zero, 0.5f).SetEase(Ease.OutBack);
+        }
+
+        public override void Hide()
+        {
+            canvasGroup.DOFade(0f, 0.4f);
+            rectTransform.DOScale(Vector3.zero, 0.4f).SetEase(Ease.InBack);
+            rectTransform.DORotate(new Vector3(0, 0, -15f), 0.4f).SetEase(Ease.InBack).OnComplete(() => canvas.gameObject.SetActive(false));
         }
 
         private void UpdateSliders()

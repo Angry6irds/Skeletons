@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2bc691bc356899641851badddd842114
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Artficial_Dungeon/Objects/Artificial_Objects/Conector.prefab
+  uploadId: 555956

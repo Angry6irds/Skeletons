@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4534923e9b2b9964da8b5a3c739f296b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dependencies/Prefabs/Loaders/Player.prefab
+  uploadId: 555956

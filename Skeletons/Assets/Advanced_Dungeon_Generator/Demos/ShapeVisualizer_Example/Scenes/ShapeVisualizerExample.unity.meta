@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: daafad4d6bc37df40a6df4dbe9e1c20c
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/ShapeVisualizer_Example/Scenes/ShapeVisualizerExample.unity
+  uploadId: 555956

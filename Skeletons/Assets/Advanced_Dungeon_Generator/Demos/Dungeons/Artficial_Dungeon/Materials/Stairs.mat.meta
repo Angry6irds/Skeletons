@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 31582a8bd335a7e41ac424930f3cf97e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Artficial_Dungeon/Materials/Stairs.mat
+  uploadId: 555956

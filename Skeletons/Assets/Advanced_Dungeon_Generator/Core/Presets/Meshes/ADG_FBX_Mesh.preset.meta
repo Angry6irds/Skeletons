@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 437429853f6713f4c95908f2bdd19f3c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Core/Presets/Meshes/ADG_FBX_Mesh.preset
+  uploadId: 555956

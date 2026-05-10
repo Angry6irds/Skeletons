@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fb118df5cc897454190276fd714e0d12
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Example_Dungeon/Dungeon_Components/Decorations/Example_GroundDecoration.asset
+  uploadId: 555956

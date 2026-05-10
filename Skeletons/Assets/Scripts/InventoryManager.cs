@@ -3,97 +3,93 @@ using System.Collections.Generic;
 using Alejandro;
 using NaughtyAttributes;
 using ScriptableObjet;
-using Unity.VisualScripting;
 using UnityEngine;
 
-
 [Serializable]
-    public class RuntimeItem
+public class RuntimeItem
+{
+    public string name;
+    public ItemType itemType;
+    
+    public RuntimeItem(string name, ItemType itemType)
     {
-        public string name;
-        public ItemType itemType;
-        public Sprite sprite;
-        
-        public  RuntimeItem(string name, Sprite sprite, ItemType itemType)
-        {
-            this.name = name;
-            this.sprite = sprite;
-            this.itemType = itemType;
-        }
+        this.name = name;
+        this.itemType = itemType;
     }
-    public class InventoryManager : MonoBehaviour
+}
+
+public class InventoryManager : MonoBehaviour
+{
+    public static InventoryManager Instance { get; private set; }
+    public List<RuntimeItem> items = new List<RuntimeItem>(); 
+    public List<ItemData> itemDatas = new List<ItemData>();
+
+    public Action OnInventoryChanged;
+
+    public void Awake()
     {
-        public static InventoryManager Instance{get; private set;}
-        public List<RuntimeItem> items = new List<RuntimeItem>(); 
-        public List<ItemData> itemDatas = new List<ItemData>();
-        public void Awake()
+        if (Instance != null && Instance != this)
         {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
-            Instance = this;
-        }
+    void Start()
+    {
+        LoadInventory();
+    }
 
-        void Start()
-        {
-            LoadInvetory();
-        }
-
-        public void CreateItem(ItemType item)
-        {
-            foreach (var Item in  itemDatas )
-            {
-                if (Item.itemType == item)
-                {
-                    RuntimeItem runtimeItem = new RuntimeItem(Item.name, Item.Icon, Item.itemType);
-                    items.Add(runtimeItem);
-                }
-            }
-        }
-        [Button]
-        public void CreateItemTest()
-        {
-            CreateItem(ItemType.axe);
-            Debug.Log("CreateItemTest:" + items.Count);
-        }
-
-        [Button]
-        public void CreateItemTest2()
-        {
-            CreateItem(ItemType.sword);
-            Debug.Log("CreateItemTest2:" + items.Count);
-        }
+    public void AddItem(ItemData item)
+    {
+        if (HasItem(item.itemType)) return;
         
-        [Button]
-        public void SafeInvetoryInJson()
+        RuntimeItem runtimeItem = new RuntimeItem(item.ItemName, item.itemType);
+        items.Add(runtimeItem);
+        SaveInventory();
+        OnInventoryChanged?.Invoke();
+    }
+
+    public bool HasItem(ItemType type)
+    {
+        foreach (var item in items)
         {
-            //Create file
-            string json = JsonHelper.ToJson(items.ToArray(), true);
-            Debug.Log(json);
-            string path = Application.persistentDataPath + "/inventory.json";
-            System.IO.File.WriteAllText(path, json);
-            Debug.Log(path);
-            
+            if (item.itemType == type) return true;
         }
-        
-        public void LoadInvetory()
+        return false;
+    }
+
+    public ItemData GetItemData(ItemType type)
+    {
+        foreach (var data in itemDatas)
         {
-            string path = Application.persistentDataPath + "/inventory.json";
-            if(!System.IO.File.Exists(path))
-            {
-                Debug.LogError("no inventory file found:"  + path);
-                return;
-            }
-            string json = System.IO.File.ReadAllText(path);
-            RuntimeItem[] loadItems = JsonHelper.FromJson<RuntimeItem>(json);
-            
-            items.Clear();
-            items.AddRange(loadItems);
-            
+            if (data.itemType == type) return data;
         }
-        
+        return null;
+    }
+
+    [Button]
+    public void SaveInventory()
+    {
+        string json = JsonHelper.ToJson(items.ToArray(), true);
+        string path = Application.persistentDataPath + "/inventory.json";
+        System.IO.File.WriteAllText(path, json);
     }
     
+    public void LoadInventory()
+    {
+        string path = Application.persistentDataPath + "/inventory.json";
+        if(!System.IO.File.Exists(path)) return;
+        
+        string json = System.IO.File.ReadAllText(path);
+        RuntimeItem[] loadItems = JsonHelper.FromJson<RuntimeItem>(json);
+        
+        items.Clear();
+        if (loadItems != null)
+        {
+            items.AddRange(loadItems);
+        }
+        OnInventoryChanged?.Invoke();
+    }
+}

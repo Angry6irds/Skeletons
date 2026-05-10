@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class MenuUI : UIWindow
 {
@@ -18,10 +19,30 @@ public class MenuUI : UIWindow
         settingsButton.onClick.AddListener(OnSettingsClicked);
     }
 
+    public override void Show()
+    {
+        canvas.gameObject.SetActive(true);
+        canvasGroup.alpha = 0f;
+        rectTransform.localScale = Vector3.one * 0.9f;
+        
+        canvasGroup.DOFade(1f, 0.5f);
+        rectTransform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutCubic);
+    }
+
+    public override void Hide()
+    {
+        canvasGroup.DOFade(0f, 0.4f);
+        rectTransform.DOScale(Vector3.one * 0.9f, 0.4f).SetEase(Ease.InCubic).OnComplete(() => canvas.gameObject.SetActive(false));
+    }
+
     private void OnPlayClicked()
     {
         UiManager.Instance.HideWindow(WindowsId.MenuUI);
         UiManager.Instance.ShowWindow(WindowsId.GameplayUI);
+        if (Alejandro.Gameplay.GameManager.Instance != null)
+        {
+            Alejandro.Gameplay.GameManager.Instance.StartGame();
+        }
     }
 
     private void OnShopClicked()

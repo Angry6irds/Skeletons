@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 81e8a384369b8ce45964e892434c57fb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Example_Dungeon/Materials/Decorations/Example_CornerDecorationMaterial_Atlas.mat
+  uploadId: 555956

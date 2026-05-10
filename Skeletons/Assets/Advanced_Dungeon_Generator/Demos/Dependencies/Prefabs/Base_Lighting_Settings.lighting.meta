@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6d9c4a71a26293c4fa998fa1dd8f8116
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dependencies/Prefabs/Base_Lighting_Settings.lighting
+  uploadId: 555956

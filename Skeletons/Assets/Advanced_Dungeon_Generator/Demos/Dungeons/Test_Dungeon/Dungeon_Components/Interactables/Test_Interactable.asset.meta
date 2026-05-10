@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 49c1523746f033143af554eec18e8766
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Demos/Dungeons/Test_Dungeon/Dungeon_Components/Interactables/Test_Interactable.asset
+  uploadId: 555956

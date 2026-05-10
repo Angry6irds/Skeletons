@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 08fabb642fcf59e46abff8433b207747
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213225
+  packageName: Advanced Dungeon Generator - LITE
+  packageVersion: 2.0.0
+  assetPath: Assets/Advanced_Dungeon_Generator/Core/Presets/Textures/ADG_Map.preset
+  uploadId: 555956
