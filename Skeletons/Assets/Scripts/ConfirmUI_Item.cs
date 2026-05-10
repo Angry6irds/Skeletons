@@ -12,6 +12,7 @@ namespace Alejandro
         [SerializeField] private Image itemIcon;
         [SerializeField] private Button buyButton;
         [SerializeField] private Button cancelButton;
+        [SerializeField] private Button returnButton;
 
         private ItemData _currentItem;
 
@@ -20,6 +21,13 @@ namespace Alejandro
             base.Initialize();
             if (buyButton != null) buyButton.onClick.AddListener(OnBuyClicked);
             if (cancelButton != null) cancelButton.onClick.AddListener(OnCancelClicked);
+            returnButton.onClick.AddListener(OnReturnClick);
+        }
+
+        private void OnReturnClick()
+        {
+            Hide();
+            UiManager.Instance.ShowWindow(WindowsId.ShopUI);
         }
 
         public void SetupConfirmation(ItemData data)
