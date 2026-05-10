@@ -346,7 +346,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4243231614434044962
 GameObject:
@@ -717,7 +717,6 @@ GameObject:
   - component: {fileID: 3268710609571087275}
   - component: {fileID: 1092133144078509685}
   - component: {fileID: 7076970914907692314}
-  - component: {fileID: 1308159720346430839}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -810,23 +809,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1308159720346430839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5433302931654230378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd857f668af43ccaf1ebbb727783f6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Alejandro.ResponsiveElements
-  _rectTransform: {fileID: 2477275846361440201}
-  mobileAnchorMin: {x: -11.22861, y: -4.957224}
-  mobileAnchorsMax: {x: 12.171391, y: 5.842776}
-  tabletAnchorsMin: {x: -11.22861, y: -7.5831957}
-  tabletAnchorsMax: {x: 12.171391, y: 8.593795}
 --- !u!1 &5501699292773971608
 GameObject:
   m_ObjectHideFlags: 0
