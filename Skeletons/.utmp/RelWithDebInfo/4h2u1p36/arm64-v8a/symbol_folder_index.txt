@@ -1,0 +1,1 @@
+C:\Users\A106_2\Desktop\Riot Cliente\Skeletons\Skeletons\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\4h2u1p36\obj\arm64-v8a
