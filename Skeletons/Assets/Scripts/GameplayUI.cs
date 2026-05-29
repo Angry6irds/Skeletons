@@ -133,6 +133,11 @@ namespace Alejandro
             float actualCooldown = Mathf.Max(0.5f, baseSpawnCooldown - speedReduction);
             
             currentCooldownTimer = actualCooldown;
+
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.SpawnAlly(currentSelectedItem);
+            }
         }
 
         public void RegisterEnemyKilled()

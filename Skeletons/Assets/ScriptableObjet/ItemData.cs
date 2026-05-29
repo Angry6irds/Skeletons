@@ -10,12 +10,15 @@ namespace ScriptableObjet
         [FormerlySerializedAs("itenName")] [SerializeField] string itemName;
         [SerializeField] public ItemType itemType;
         [SerializeField, TextArea(3, 5)] string statsDescription;
+        [SerializeField] GameObject unitPrefab;
         
         public Sprite Icon => icon;
         
         public string ItemName => itemName;
 
         public string StatsDescription => statsDescription;
+
+        public GameObject UnitPrefab => unitPrefab;
     
     }
 
